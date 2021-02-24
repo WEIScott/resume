@@ -8,5 +8,5 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('reapp.urls')),
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
+    url('static/', serve,{'document_root': settings.STATIC_ROOT}), 
 ]

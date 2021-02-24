@@ -1,1 +1,1 @@
-web: gunicorn repro.wsgi
+web: gunicorn repro.wsgi --log-file -

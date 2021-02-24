@@ -1,6 +1,6 @@
 from pathlib import Path
 import os
-import django-heroku
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -115,5 +115,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = ( os.path.join('reapp/static'), )
 
-# Activate Django-Heroku.
-django_heroku.settings(locals())
